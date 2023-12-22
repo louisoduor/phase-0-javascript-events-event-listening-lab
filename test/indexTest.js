@@ -12,6 +12,6 @@ describe("index.js", () => {
 
   it("binds an event listener in addingEventListener()", () => {
     addingEventListener();
-    expect(input.addEventListener.called).to.be.true;
-  })
-})
+    expect(input.addEventListener.calledOnceWithExactly('click', sinon.match.func)).to.be.true;
+  });
+});

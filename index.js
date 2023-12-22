@@ -1,22 +1,10 @@
 
-document.addEventListener('DOMContentLoaded', function() {
-  const input = document.getElementById('input');
+function addingEventListener() {
+  const element = document.getElementById("button");
+  element.addEventListener("click", handleButtonClick);
+}
 
-  function clickAlert() {
-    alert('I was clicked!');
-  }
-  input.addEventListener('click', clickAlert);
+function handleButtonClick(event) {
+  alert("Button clicked");
+}
 
-  
-  function addingEventListener() {
-    const input = document.getElementById('input');
-input.addEventListener('click', function() {
-  alert('I was clicked!');
-});
-  }
-
-  function c() {
-    alert('I was clicked!');
-  }
-  addingEventListener();
-});
